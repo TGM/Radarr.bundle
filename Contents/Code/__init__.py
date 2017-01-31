@@ -41,9 +41,9 @@ def ValidatePrefs():
 @handler(PREFIX, NAME, thumb='1024.png', art='logo.png')
 def main_menu():
     oc = ObjectContainer()
-    oc.add(DirectoryObject(key=Callback(series),
-                           title=L('series'),
-                           summary=L('series_desc'),
+    oc.add(DirectoryObject(key=Callback(movies),
+                           title=L('movies'),
+                           summary=L('movies_desc'),
                            thumb=R('play.png')))
     oc.add(DirectoryObject(key=Callback(calendar),
                            title=L('calendar'),

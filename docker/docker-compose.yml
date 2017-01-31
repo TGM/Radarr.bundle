@@ -8,20 +8,20 @@ services:
       - TZ=America/Phoenix
       - VERSION=latest
     volumes:
-      - ../:/config/Library/Application Support/Plex Media Server/Plug-ins/Sonarr.bundle:ro
+      - ../:/config/Library/Application Support/Plex Media Server/Plug-ins/Radarr.bundle:ro
       - ./logs:/config/Library/Application Support/Plex Media Server/Logs/PMS Plugin Logs
 
   sonarr:
-    image: linuxserver/sonarr
+    image: linuxserver/radarr
     ports:
-      - "8989:8989"
+      - "7878:7878"
     volumes:
       - /dev/rtc:/dev/rtc:ro
 
   nginx:
     image: nginx
     depends_on:
-     - sonarr
+     - radarr
     ports:
       - "80:80"
     volumes:
