@@ -1,6 +1,6 @@
-# Sonarr.bundle
+# Radarr.bundle
 
-A plugin for [Plex Media Server](https://plex.tv/) that is a client for [Radarr](https://radarr.video/) (forked from [Sonarr.bundle]()https://github.com/jamorin/Sonarr.bundle).
+A plugin for [Plex Media Server](https://plex.tv/) that is a client for [Radarr](https://radarr.video/) (forked from [Sonarr.bundle](https://github.com/jamorin/Sonarr.bundle)).
 
 ![Screenshot](screenshot.png)
 
