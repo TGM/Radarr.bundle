@@ -6,10 +6,10 @@ import re
 from DumbTools import DumbKeyboard
 from updater import Updater
 
-PREFIX = '/video/sonarr'
-NAME = 'Sonarr'
+PREFIX = '/video/radarr'
+NAME = 'Radarr'
 
-ENDPOINT = 'http://127.0.0.1:8989'
+ENDPOINT = 'http://127.0.0.1:7878'
 HEADERS = {'X-Api-Key': None,
            'Accept': 'application/json',
            'Content-Type': 'application/json'
